@@ -22,11 +22,11 @@ echo -e "    •> Install UDP Server <•" | lolcat
 
 echo -e "      •> Fix Bug Script <•" | lolcat
 
-echo -e "     •> Script By @ARI_VPN_STORES <•" | lolcat
+echo -e "     •> Script By @GbtTapiPngnSndiri <•" | lolcat
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "  ${BG} >>> THANKS TO ARI VPN STORES <<< ${NC}" 
+echo -e "  ${BG} >>> THANKS TO hendr.store <<< ${NC}" 
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
