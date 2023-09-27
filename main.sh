@@ -28,8 +28,8 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 KEY="6340999133:AAG6cgp1Yc522EKc7N-T3xDzI2UW3VYThm0"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-REPO="https://raw.githubusercontent.com/arivpnstores/scupdate/main/"
-CDNF="https://raw.githubusercontent.com/arivpnstores/scupdate/main"
+REPO="https://raw.githubusercontent.com/heruhendri/scupdate/main/"
+CDNF="https://raw.githubusercontent.com/heruhendri/scupdate/main"
 APT="apt-get -y install "
 domain=$(cat /root/domain)
 start=$(date +%s)
