@@ -1,48 +1,71 @@
 #!/bin/bash
-
+NS=$( cat /etc/xray/dns )
+PUB=$( cat /etc/slowdns/server.pub )
+domain=$(cat /etc/xray/domain)
+#color
+grenbo="\e[92;1m"
+NC='\e[0m'
 #install
 apt update && apt upgrade
 apt install python3 python3-pip git
-git clone https://github.com/rizkyckj/scupdate.git
-unzip scupdate/xolpanel.zip
-pip3 install -r xolpanel/requirements.txt
-pip3 install pillow
+cd /usr/bin
+wget https://raw.githubusercontent.com/heruhendri/scupdate/main/bot/bot.zip
+unzip bot.zip
+mv bot/* /usr/bin
+chmod +x /usr/bin/*
+clear
+wget https://raw.githubusercontent.com/heruhendri/scupdate/main/bot/kyt.zip
+unzip kyt.zip
+pip3 install -r kyt/requirements.txt
 
 #isi data
-echo "INSTALL BOT CREATE via TELEGRAM"
+echo ""
+echo -e "\033[1;36m════════════════════════════════════\033[0m"
+echo -e " \e[1;97;101m          ADD BOT PANEL          \e[0m"
+echo -e "\033[1;36m════════════════════════════════════\033[0m"
+echo -e "${grenbo}Tutorial Create Bot and ID Telegram${NC}"
+echo -e "${grenbo}[*] Create Bot and Token Bot : @BotFather${NC}"
+echo -e "${grenbo}[*] Info Id Telegram : @MissRose_bot , perintah /info${NC}"
+echo -e "\033[1;36m════════════════════════════════════\033[0m"
 read -e -p "[*] Input your Bot Token : " bottoken
 read -e -p "[*] Input Your Id Telegram :" admin
-read -e -p "[*] Input Your Domain :" domain
-echo -e BOT_TOKEN='"'$bottoken'"' >> /root/ftvpn/var.txt
-echo -e ADMIN='"'$admin'"' >> /root/ftvpn/var.txt
-echo -e DOMAIN='"'$domain'"' >> /root/ftvpn/var.txt
+echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
+echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
+echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
+echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
+echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
 clear
-echo "Done"
-echo "Your Data Bot"
-echo -e "==============================="
-echo "Api Token     : $bottoken"
-echo "ID            : $admin"
-echo "DOMAIN        : $domain"
-echo -e "==============================="
-echo "Setting done"
 
-cat > /etc/systemd/system/xolpanel.service << END
+cat > /etc/systemd/system/kyt.service << END
 [Unit]
-Description=Simple XolPanel - @XolPane
+Description=Simple kyt - @kyt
 After=network.target
 
 [Service]
-WorkingDirectory=/root
-ExecStart=/usr/bin/python3 -m xolpanel
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/python3 -m kyt
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
 END
 
-systemctl start xolpanel
-systemctl enable xolpanel
-
+systemctl start kyt 
+systemctl enable kyt
+systemctl restart kyt
+cd /root
+echo "Done"
+echo "Your Data Bot"
+echo -e "==============================="
+echo "Token Bot         : $bottoken"
+echo "Admin          : $admin"
+echo "Domain        : $domain"
+echo "Pub            : $PUB"
+echo "Host           : $NS"
+echo -e "==============================="
+echo "Setting done"
 clear
 
 echo " Installations complete, type /menu on your bot"
+rm -rf kyt.sh
+rm -rf bot.zip
