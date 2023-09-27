@@ -1,9 +1,17 @@
-### AUTOSCRIPT
+### ORDER AUTOSCRIPT/IZIN IP
+- PRICELIST
 ```
-SC TUNELL LIFETIME BY ARI VPN STORE
+HARGA SEWA AUTOSCRIPT 
+1 Bulan : 15K
+2 Bulan : 25K
+3 Bulan : 35K
+
+1 Tahun : 75K
+LIFETIME: 150K
 ```
 • HUBUNGI:
-- Telegram: [Klik Disini](https://t.me/ARI_VPN_STORE)
+- WhatsApp: [Klik Disini](https://wa.me/)
+- Telegram: [Klik Disini](https://t.me/@GbtTapiPngnSndiri)
 
 ### PERHATIAN
 
@@ -11,16 +19,17 @@ SC TUNELL LIFETIME BY ARI VPN STORE
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
 ### INSTALL SCRIPT 1
-<pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/arivpnstores/scupdate/main/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
+<pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/JurigVPN/scupdate/jurig/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
 
 ### PERINTAH UPDATE 
-<pre><code>wget https://raw.githubusercontent.com/arivpnstores/scupdate/main/update.sh && chmod +x update.sh && ./update.sh</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/JurigVPN/scupdate/jurig/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
 - DEBIAN 10
 
 ### FITUR TAMBAHAN
+- Atur Limit IP
 - Atur Limit Quota Per Akun
 - Bot Notifikasi
 - SlowDNS & SSH UDP
@@ -62,4 +71,3 @@ SC TUNELL LIFETIME BY ARI VPN STORE
 ### Lisensi
 Repository ini dilindungi oleh lisensi [PAK POLISI](https://mit-license.org/)
 
-BY: ARI VPN STORES
