@@ -406,7 +406,7 @@ touch /root/.install.log
 cat >/root/tmp <<-END
 #!/bin/bash
 #vps
-### ARI VPN STORES $TANGGAL $MYIP
+### hendr.store $TANGGAL $MYIP
 END
 ####
 RIZKIHDYTPROJECT() {
