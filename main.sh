@@ -511,13 +511,6 @@ function install_all() {
 }
 
 function finish(){
-if [[ -n "$izin" ]]; then
-  while IFS= read -r line; do
-    # Memisahkan nama VPS, IP VPS, dan tanggal kadaluwarsa
-    nama=$(echo "$line" | awk '{print $1}')
-    ipvps=$(echo "$line" | awk '{print $2}')
-    tanggal=$(echo "$line" | awk '{print $3}')
-
     TEXT="
 ────────────────────
 ⚠️INFO INSTALL SC PREM⚠️
