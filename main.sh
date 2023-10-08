@@ -512,7 +512,9 @@ function install_all() {
 
 function finish(){
     TEXT="
-<u>🌀INFO INSTALL SC🌀</u>
+────────────────────
+<u>⚠️INFO INSTALL SC PREM⚠️</u>
+────────────────────
 <code>TIME      : </code><code>${TIME}</code>
 <code>IPVPS     : </code><code>${MYIP}</code>
 <code>DOMAIN    : </code><code>${domain}</code>
@@ -521,6 +523,7 @@ function finish(){
 <code>USER      : </code><code>${NAMES}</code>
 <code>RAM       : </code><code>${RAMMS}MB</code>
 <code>LINUX     : </code><code>${OS}</code>
+────────────────────
 🔰@GbtTapiPngnSndiri
 "
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
