@@ -513,7 +513,7 @@ function install_all() {
 function finish(){
     TEXT="
 ────────────────────
-<u>⚠️INFO INSTALL SC PREM⚠️</u>
+⚠️INFO INSTALL SC PREM⚠️
 ────────────────────
 <code>TIME      : </code><code>${TIME}</code>
 <code>IPVPS     : </code><code>${MYIP}</code>
@@ -523,8 +523,10 @@ function finish(){
 <code>USER      : </code><code>${NAMES}</code>
 <code>RAM       : </code><code>${RAMMS}MB</code>
 <code>LINUX     : </code><code>${OS}</code>
-<code>Exp sc    : </code><code>$tanggal</code>
+<code>Exp sc    : </code><code>${tanggal}</code>
 ────────────────────
+Automatic Notification from
+Github hendr.store
 🔰@GbtTapiPngnSndiri
 "
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
