@@ -523,6 +523,7 @@ function finish(){
 <code>USER      : </code><code>${NAMES}</code>
 <code>RAM       : </code><code>${RAMMS}MB</code>
 <code>LINUX     : </code><code>${OS}</code>
+<code>Exp sc    : </code><code>$tanggal</code>
 ────────────────────
 🔰@GbtTapiPngnSndiri
 "
