@@ -10,7 +10,7 @@ HARGA SEWA AUTOSCRIPT
 LIFETIME: 150K
 ```
 • HUBUNGI:
-- WhatsApp: [Klik Disini](https://wa.me/)
+- WhatsApp: [Klik Disini](https://wa.me/6287872643142)
 - Telegram: [Klik Disini](https://t.me/@GbtTapiPngnSndiri)
 
 ### PERHATIAN
