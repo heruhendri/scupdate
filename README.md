@@ -14,7 +14,7 @@ LIFETIME: 150K
 - Telegram: [Klik Disini](https://t.me/@GbtTapiPngnSndiri)
 
 # hendri.store
-  ![qris](https://github.com/hereuhendri/scupdate/raw/main/qrisshendr.store.jpg)
+  ![qris](https://raw.githubusercontent.com/heruhendri/scupdate/refs/heads/main/hendri%20store/qrisshendr.store.jpg)
 - Dana/Ovo/Gopay/ShopeePay
 - 08977345640
 
