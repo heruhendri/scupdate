@@ -14,7 +14,7 @@ LIFETIME: 150K
 - Telegram: [Klik Disini](https://t.me/@GbtTapiPngnSndiri)
 
 # hendri.store
-  ![qris](https://raw.githubusercontent.com/heruhendri/scupdate/refs/heads/main/hendri%20store/qrisshendr.store.jpg)
+  ![qris](https://raw.githubusercontent.com/heruhendri/scupdate/refs/heads/v1.0.0/hendri%20store/qrisshendr.store.jpg)
 - Dana/Ovo/Gopay/ShopeePay
 - 08977345640
 
@@ -24,13 +24,13 @@ LIFETIME: 150K
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
 ### INSTALL SCRIPT 1
-<pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/heruhendri/scupdate/main/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
+<pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/heruhendri/scupdate/v1.0.0/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
 
 ### PERINTAH UPDATE 
-<pre><code>wget https://raw.githubusercontent.com/heruhendri/scupdate/main/update.sh && chmod +x update.sh && ./update.sh</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/heruhendri/scupdate/v1.0.0/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
 ### INSTALL BOT
-<pre><code>wget https://raw.githubusercontent.com/heruhendri/scupdate/main/bot.sh && chmod +x bot.sh && ./bot.sh</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/heruhendri/scupdate/v1.0.0/bot.sh && chmod +x bot.sh && ./bot.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
